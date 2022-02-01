@@ -1,0 +1,292 @@
+*{
+     margin : 0px ;
+     padding : 0px;
+
+}
+
+
+    
+.main{
+    position: relative;
+    background: #0a0317;
+
+}
+
+
+nav{
+    background: #0e0420;
+    padding : 2rem;
+}
+
+.watchmo{
+   
+
+width : 35%;
+background: #100425;
+box-shadow:  23px 23px 46px #05010b,
+             -23px -23px 46px #0f0523;
+min-width: 200px;
+padding : 3rem;
+
+border-radius: 0px 50px 0px 50px;
+background-color: #1fd1f9;
+background-image: linear-gradient(315deg, #1fd1f9 0%, #b621fe 74%);
+z-index : 3;
+
+
+
+}
+
+.logo{
+ 
+    color: #fff;
+    text-shadow: #000 6px 6px 6px;
+    font-family: 'Titan One';
+    text-align: center;
+    font-size : 3rem;
+    min-width: 200px
+}
+
+header{
+    
+    background: #0e0420;
+    z-index = 1;
+}
+
+body{
+
+    background-color: #0a0317;
+}
+
+
+
+.container{
+
+
+    width:100%;
+
+    background: #100425;
+    overflow : visible;
+    display: flex;
+    flex-direction : column;
+    background: #0a0317;
+
+    
+ 
+}
+
+.bg-img{
+    position: absolute;
+    width : 50%;
+    filter: brightness(50%);
+    top : 0%;
+    right : 0%;
+    z-index : 1;
+    
+}
+
+
+.form{
+    position : relative;
+    display : flex;
+    flex-direction : column;
+    align-items : center;
+    justify-content : center;
+    z-index : 2;
+}
+
+
+.search{
+
+    overflow : visible;
+    width: 600px;
+    margin : 2.5rem;
+    height : 4rem;
+    border-radius : 5px;
+    text-decoration: none;
+    outline: none;
+    font-size : 1.5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-left : 2rem;
+    box-shadow:  23px 23px 46px #05010b,
+    -23px -23px 46px #0f0523;
+   
+}
+
+
+
+
+
+.button{
+
+
+    width : 150px;
+    padding : 1rem;
+    margin-top : 1rem;
+    border-radius : 30px;
+    background: #100425;
+    box-shadow:  23px 23px 46px #05010b,
+                 -23px -23px 46px #0f0523;
+    font-family: 'Fredoka One';
+    font-size: 1.5rem;
+    color: ivory;
+    text-shadow: rgb(8, 9, 63) 2px 2px 2px;
+
+    background-color: #2a2a72;
+background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
+}
+
+.button:hover{
+
+   background-color :  #9921e8;
+background-image :linear-gradient(315deg, #9921e8 0%, #5f72be 74%);
+}
+
+.results{
+    position : relative;
+    z-index : 2;
+    display : flex;
+    flex-direction : column;
+    align-item : center;
+    justify-content : center;
+    margin : 3rem;
+
+}
+
+
+h1{
+color : #000000;
+ font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5rem;
+    color: ivory;
+    text-shadow: black 8px 8px 8px;
+    margin : 2rem;
+
+
+}
+
+
+.movie-posters{
+
+    display : flex;
+    flex-direction : row;
+    flex-wrap : wrap;
+    justify-content : space-evenly;
+
+
+
+}
+
+.img-poster{
+    display : flex;
+    flex-direction : row;
+    width : 12rem;
+    box-shadow: inset 23px 23px 46px #05010b,
+            inset -23px -23px 46px #0f0523;
+
+}
+
+
+
+.recommendations{
+
+    display : flex;
+    flex-direction : column;
+    align-items : center;
+    justify-content : center;
+
+}
+
+.names,{
+
+    display : flex;
+    flex-direction : row;
+    align-items : center;
+    justify-content : space-between;
+
+
+}
+
+.posters{
+
+    display : flex;
+    flex-direction : column;
+    justify-content : strech;
+    width : 12rem;
+    margin : 1rem;
+
+
+
+}
+
+a { color: inherit;
+    text-decoration : None;
+    outline : None;
+    }
+
+h3{
+    color : #000000;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+    overflow-wrap: break-word;
+    color: ivory;
+    text-shadow: black 8px 8px 8px;
+    padding : 1.5rem;
+    text-align : center;
+    height : 100%;
+    vertical-align : middle;
+    background: #100425;
+    box-shadow:  23px 23px 46px #05010b,
+                 -23px -23px 46px #0f0523;
+
+    font-size: 1.5rem;
+    color: ivory;
+    text-shadow: rgb(8, 9, 63) 2px 2px 2px;
+
+    background-color: #2a2a72;
+    background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
+    display : flex;
+    align-items : center;
+    justify-content : center;
+
+    border-radius: 0px 0px 10px 0px;
+
+}
+
+
+@media only screen and (max-device-width: 480px) {
+
+
+.watchmo{
+
+    position : relative;
+    width  :70%;
+    margin : auto;
+
+    z-index : 3;
+}
+
+
+
+
+.bg-img{
+
+    position : absolute;
+    width : 100%;
+    z-index : 1;
+
+}
+
+
+
+.search{
+
+    width : 70%;
+}
+
+
+
+
+
+
+    }
