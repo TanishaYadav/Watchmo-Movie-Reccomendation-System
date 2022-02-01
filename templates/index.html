@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Titan+One&display=swap" rel="stylesheet">
+
+
+<link rel="stylesheet" href="../static/css/style.css">
+
+    <title>Wachmo</title>
+</head>
+<body>
+    <div class="main">
+        <header>
+            <nav>
+                <div class="watchmo">
+                    <center><div class="logo"><a href="/">WATCHMO</a></div></center>
+                </div>
+            </nav>
+        </header>
+
+    <img src="{{url_for('static', filename = 'images/movies_collage.jpg')}}" alt="" class = "bg-img">
+
+
+        <div class="container">
+
+            <form class="form" name="form" method = 'POST' action ='{{url_for('home')}}'>  <!--     function name -->
+
+
+                <div>
+                <input class="search" type="text" name="movies_name" list = "movies_name"  placeholder="Search any movie...">
+                    <datalist id ="movies_name">
+
+                        {% for movie in movies_list %}
+                          <option value = "{{movie}}">  {{movie }}  </option>
+                        {% endfor %}
+
+                    </datalist>
+                </div>
+                <div>
+                    <input type  = 'submit' class = 'button' value = 'Search'>
+                </div>
+            </form>
+        </div>
+
+        <div class = "results">
+
+            <div class = "movie-name">
+                {% if movie_name != None %}
+                    <center> <h1> Movies similar to : {{movie_name}}</h1></center>
+                {% endif %}
+            </div>
+            <div class = "recommendations">
+                <div class = "movie-posters">
+                    {% if movie_name != None %}
+                        {% for movie,poster in recommendation %}
+                            <div class = "posters">
+                                <img src = "{{poster}}" alt = "{{movie}} " class = "img-poster">
+                                 <h3>{{movie[:]}}</h3>
+                            </div>
+                        {% else %}
+                            <h3>Movie not found</h3>
+                        {% endfor %}
+                    {% endif %}
+                </div>
+
+            </div>
+     </div>
+
+</div>
+    
+</body>
+</html>
